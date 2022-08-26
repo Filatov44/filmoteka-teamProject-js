@@ -1,5 +1,7 @@
 import TrendingMovies from './js/trending-movies';
 import { headMarkup } from './js/markup';
+import { currentWatchedPage } from './js/header-library';
+import { currentQueuePage } from './js/header-library';
 
 const refs = {
   listFilm: document.querySelector('.listFilm'),
