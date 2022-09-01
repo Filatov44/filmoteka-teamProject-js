@@ -38,24 +38,24 @@ import SearchFilm from './trending-movies';
 // addWatchedBtn.addEventListener('click', () => addToStorage("watchedList", item));
 
 
-export function addToStorage(listName, film) {
-    // let items = [];
-    // console.log('1', film);
-    let items = getStorage(listName) !== undefined ? getStorage(listName) : [];
+// export function addToStorage(listName, film) {
+//     // let items = [];
+//     // console.log('1', film);
+//     let items = getStorage(listName) !== undefined ? getStorage(listName) : [];
 
-    // console.log(items);
-    // console.log(listName);
-    if (items.find(item => item.id === film.id)) {
-        let array = items.filter(item => item.id !== film.id)
+//     // console.log(items);
+//     // console.log(listName);
+//     if (items.find(item => item.id === film.id)) {
+//         let array = items.filter(item => item.id !== film.id)
 
-        addStorage(`${listName}`, array)
+//         addStorage(`${listName}`, array)
 
-    }
-    if (!items.find(item => item.id === film.id)) {
-        let array = [...items, film]
-        addStorage(`${listName}`, array)
-    }
-}
+//     }
+//     if (!items.find(item => item.id === film.id)) {
+//         let array = [...items, film]
+//         addStorage(`${listName}`, array)
+//     }
+// }
 
 
 // ---------------------reserved--------------------------------------------------

@@ -21,7 +21,6 @@ function onModalClose() {
     window.removeEventListener('keydown', onEscKeyPress);
     document.body.classList.remove('show-modal');
     document.body.style.overflow = 'auto';
-    // document.body.classList.remove('lock');
 }
 function onBackdropClick(event) {
     if (event.target === event.currentTarget) {
@@ -60,7 +59,7 @@ function createModalMarkup(item) {
     console.log(item);
     console.log(`${IMG_URL}/original/${item.poster_path}`);
     return `
-      <div class="modal__backdrop  js-backdrop">
+      <div class=" js-backdrop">
 
         <div class="modal__container">
 
@@ -78,7 +77,7 @@ function createModalMarkup(item) {
                     <div class="grid-container">
                         <table>
                             <tr>
-                                <td class="film__info">Vote / Votes</td>
+                                <td class="film__info">Vote/Votes</td>
                                 <td class="film__value">
                                 <span class="film__vote film__vote--orange">${item.vote_average.toFixed(
             1
